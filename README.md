@@ -1,5 +1,14 @@
 # Employee-Performance-Mapping
-Analyzing Employee Performance Mapping using SQL
+## Analyzed Employee-Performance-Mapping
+### Project Outcome
+●	Employee Performance Analysis: Designed SQL queries and stored procedures to analyze employee performance, calculate bonuses, rank employees by experience, and validate roles based on organizational standards, aiding HR in appraisals and promotions.
+
+●	Database Optimization: Managed databases for employee and project records, ensuring data integrity. Improved query performance through indexing strategies and views, reducing execution times for key reports.
+
+●	Advanced Reporting: Utilized nested queries, window functions, and stored functions to generate insights on salary distributions, promotion eligibility, and role validation, supporting data-driven decision-making.
+
+●	Delivered actionable insights on employee performance, ensuring alignment with organizational goals and improving operational efficiency.
+
 
 ## Employee Performance Mapping
 
