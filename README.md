@@ -4,57 +4,89 @@ Analyzing Employee Performance Mapping using SQL
 ## Employee Performance Mapping
 
 
-Problem scenario:
+## Problem scenario:
 
 ScienceQtech is a startup that works in the Data Science field. ScienceQtech has worked on fraud detection, market basket, self-driving cars, supply chain, algorithmic early detection of lung, customer sentiment, and drug discovery field. With the annual appraisal cycle around the corner, the HR department has asked you (Junior Database Administrator) to generate reports on employee details, their performance, and on the project that the employees have undertaken, to analyze the employee database and extract specific data based on different requirements.
 
-Objective: 
+## Objective: 
+
 To facilitate a better understanding, managers have provided ratings for each employee which will help the HR department to finalize the employee performance mapping. As a DBA, you should find the maximum salary of the employees and ensure that all jobs are meeting the organization's profile standard. You should also determine whether or not employees need a promotion, and calculate bonuses to find extra cost for expenses. This will raise the overall performance of the organization by ensuring that all required employees receive training.
 
 
 
-Dataset description:
+### Dataset description:
 
-emp_record_table: It contains the information of all the employees.
+#### emp_record_table: It contains the information of all the employees.
+
 ●	EMP_ID – ID of the employee
+
 ●	FIRST_NAME – First name of the employee
+
 ●	LAST_NAME – Last name of the employee
+
 ●	GENDER – Gender of the employee
+
 ●	ROLE – Post of the employee
+
 ●	DEPT – Field of the employee
+
 ●	EXP – Years of experience the employee has
+
 ●	COUNTRY – Country in which the employee is presently living
+
 ●	CONTINENT – Continent in which the country is
+
 ●	SALARY – Salary of the employee
+
 ●	EMP_RATING – Performance rating of the employee
+
 ●	MANAGER_ID – The manager under which the employee is assigned 
+
 ●	PROJECT_ID – The project on which the employee is working or has worked on
 
 
-Proj_table: It contains information about the projects.
+
+#### Proj_table: It contains information about the projects.
+
 ●	PROJ_ID – ID for the project
+
 ●	PROJ_Name – Name of the project
+
 ●	DOMAIN – Field of the project
+
 ●	START_DATE – Day the project began
+
 ●	CLOSURE_DATE – Day the project was or will be completed
+
 ●	DEV_QTR – Quarter in which the project was scheduled
+
 ●	STATUS – Status of the project currently
 
-Data_science_team: It contains information about all the employees in the Data Science team.
+
+
+#### Data_science_team: It contains information about all the employees in the Data Science team.
+
 ●	EMP_ID – ID of the employee
+
 ●	FIRST_NAME – First name of the employee
+
 ●	LAST_NAME – Last name of the employee
+
 ●	GENDER – Gender of the employee
+
 ●	ROLE – Post of the employee
+
 ●	DEPT – Field of the employee
+
 ●	EXP – Years of experience the employee has
+
 ●	COUNTRY – Country in which the employee is presently living
+
 ●	CONTINENT – Continent in which the country is
 
 
 
-
-The task to be performed: 
+### The task to be performed: 
 
 1.	Create a database named project and employee, then import data_science_team.csv and proj_table.csv into the project database and emp_record_table.csv into the employee database from the given resources.
 
@@ -86,12 +118,18 @@ The task to be performed:
 
 14.	Write a query using stored functions in the project table to check whether the job profile assigned to each employee in the data science team matches the organization’s set standard.
 
-The standard being:
-For an employee with experience less than or equal to 2 years assign 'JUNIOR DATA SCIENTIST',
-For an employee with the experience of 2 to 5 years assign 'ASSOCIATE DATA SCIENTIST',
-For an employee with the experience of 5 to 10 years assign 'SENIOR DATA SCIENTIST',
-For an employee with the experience of 10 to 12 years assign 'LEAD DATA SCIENTIST',
-For an employee with the experience of 12 to 16 years assign 'MANAGER'.
+  The standard being:
+
+  ●	For an employee with experience less than or equal to 2 years assign 'JUNIOR DATA SCIENTIST',
+
+  ●	For an employee with the experience of 2 to 5 years assign 'ASSOCIATE DATA SCIENTIST',
+
+  ●	For an employee with the experience of 5 to 10 years assign 'SENIOR DATA SCIENTIST',
+  
+  ●	For an employee with the experience of 10 to 12 years assign 'LEAD DATA SCIENTIST',
+
+  ●	For an employee with the experience of 12 to 16 years assign 'MANAGER'.
+
 
 15.	Write a query to calculate the bonus for all the employees, based on their ratings and salaries (Use the formula: 5% of salary * employee rating).
 
